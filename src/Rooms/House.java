@@ -6,7 +6,7 @@ public class House extends Board{
     {
        super(x, y);
     }
-    public void houseSpot(Person x)
+    public void enterRoom(Person x)
     {
         occupant = x;
         x.setxLoc(this.xLoc);

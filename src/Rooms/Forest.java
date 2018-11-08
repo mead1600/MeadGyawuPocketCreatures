@@ -6,7 +6,7 @@ public class Forest extends Board{
     {
         super(x, y);
     }
-    public void forestSpot(Person x) {
+    public void enterRoom(Person x) {
         occupant = x;
         x.setxLoc(this.xLoc);
         x.setyLoc(this.yLoc);
@@ -16,4 +16,5 @@ public class Forest extends Board{
         } else {
             System.out.println("You ran into WaterLilly, the water type monster");
         }
-    }}
+    }
+}

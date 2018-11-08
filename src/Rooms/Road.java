@@ -6,7 +6,7 @@ public class Road extends Board{
     {
         super(x, y);
     }
-    public void roadSpot(Person x) {
+    public void enterRoom(Person x) {
         occupant = x;
         x.setxLoc(this.xLoc);
         x.setyLoc(this.yLoc);

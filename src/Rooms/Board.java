@@ -18,7 +18,7 @@ public class Board {
      */
     public void enterRoom(Person x)
     {
-        System.out.println("You enter a plain old room");
+        System.out.println("You entered an empty field.");
         occupant = x;
         x.setxLoc(this.xLoc);
         x.setyLoc(this.yLoc);
