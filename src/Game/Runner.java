@@ -25,6 +25,11 @@ public class Runner {
                     for(int i = 0; i < 3;i++) {
                         x = (int)(Math.random()*playingBoard.length);
                         y = (int)(Math.random()*playingBoard.length);
+                        while(x == 0 && y == 0)
+                        {
+                            x = (int)(Math.random()*playingBoard.length);
+                            y = (int)(Math.random()*playingBoard.length);
+                        }
                         playingBoard[x][y] = new House(x, y);
                     }
                 }
@@ -33,6 +38,11 @@ public class Runner {
                     for(int a = 0; a < 6;a++) {
                         x = (int)(Math.random()*playingBoard.length);
                         y = (int)(Math.random()*playingBoard.length);
+                        while(x == 0 && y == 0)
+                        {
+                            x = (int)(Math.random()*playingBoard.length);
+                            y = (int)(Math.random()*playingBoard.length);
+                        }
                         playingBoard[x][y] = new Road(x, y);
                     }
                 }
@@ -41,6 +51,11 @@ public class Runner {
                     for(int b = 0; b < 6;b++) {
                         x = (int)(Math.random()*playingBoard.length);
                         y = (int)(Math.random()*playingBoard.length);
+                        while(x == 0 && y == 0)
+                        {
+                            x = (int)(Math.random()*playingBoard.length);
+                            y = (int)(Math.random()*playingBoard.length);
+                        }
                         playingBoard[x][y] = new Forest(x, y);
                     }
                 }
