@@ -62,6 +62,16 @@ public class Runner {
                     }
                 }
             }
+            for(int c = 0; c < playingBoard.length;c++)
+            {
+                for(int d = 0; d < playingBoard[c].length;d++)
+                {
+                    if(playingBoard[c][d] == null);
+                    {
+                        playingBoard[c][d] = new Board(c,d);
+                    }
+                }
+            }
         }
         Person player1 = new Person( 0,0);
         playingBoard[0][0].enterRoom(player1);
