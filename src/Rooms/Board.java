@@ -5,13 +5,13 @@ import Rooms.Person;
 public class Board {
     Person occupant;
     int xLoc,yLoc;
-    String type;
+    //String type;
 
-    public Board(int x, int y, String type)
+    public Board(int x, int y)//, //String type)
     {
         xLoc = x;
         yLoc = y;
-        this.type = type;
+        //this.type = type;
     }
 
     /**

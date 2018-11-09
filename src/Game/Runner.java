@@ -15,11 +15,12 @@ public class Runner {
     {
         Board[][] playingBoard = new Board[6][6];
         int CreatureBoxes = 10;
+        //Board type = "";
         for(int x = 0; x < playingBoard.length;x++)
         {
             for(int y =0; y < playingBoard[x].length;y++)
             {
-                playingBoard[x][y] = new Board(x,y,"");
+                playingBoard[x][y] = new Board(x,y);
                 double randomPos = Math.random();
                 if(randomPos < 0.33)
                 {
