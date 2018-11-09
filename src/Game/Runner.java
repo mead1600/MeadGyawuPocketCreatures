@@ -19,7 +19,7 @@ public class Runner {
         {
             for(int y =0; y < playingBoard[x].length;y++)
             {
-                playingBoard[x][y] = new Board(x,y);
+                playingBoard[x][y] = new Board(x,y,"");
                 double randomPos = Math.random();
                 if(randomPos < 0.33)
                 {

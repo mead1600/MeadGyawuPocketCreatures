@@ -2,9 +2,9 @@ package Rooms;
 
 import Rooms.Person;
 public class House extends Board{
-    public House(int x, int y)
+    public House(int x, int y, String type)
     {
-       super(x, y);
+        super(x, y, type);
     }
     public void enterRoom(Person x)
     {
