@@ -14,6 +14,7 @@ public class Runner {
     public static void main(String[] args)
     {
         Board[][] playingBoard = new Board[6][6];
+        int CreatureBoxes = 10;
         for(int x = 0; x < playingBoard.length;x++)
         {
             for(int y =0; y < playingBoard[x].length;y++)
