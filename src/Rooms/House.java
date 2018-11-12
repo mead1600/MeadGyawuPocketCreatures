@@ -1,12 +1,13 @@
 package Rooms;
 
+import Creatures.Typing;
 import Rooms.Person;
 public class House extends Board{
     public House(int x, int y)//, String type)
     {
         super(x, y);//type);
     }
-    public void enterRoom(Person x)
+    public void enterRoom(Person x, Typing version)
     {
         occupant = x;
         x.setxLoc(this.xLoc);

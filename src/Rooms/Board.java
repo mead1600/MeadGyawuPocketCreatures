@@ -1,6 +1,7 @@
 package Rooms;
 
 import Rooms.Person;
+import Creatures.Typing;
 
 public class Board {
     Person occupant;
@@ -18,12 +19,13 @@ public class Board {
      * Method controls the results when a person enters this room.
      * @param x the Person entering
      */
-    public void enterRoom(Person x)
+    public void enterRoom(Person x, Typing version)
     {
         System.out.println("You entered an empty field.");
         occupant = x;
         x.setxLoc(this.xLoc);
         x.setyLoc(this.yLoc);
+        version = new Typing("");
     }
 
     /**

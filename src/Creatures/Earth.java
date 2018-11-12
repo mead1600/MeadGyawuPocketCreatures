@@ -2,9 +2,11 @@ package Creatures;
 
 import Game.Runner;
 
-public class Earth {
-    public Earth(int CreatureBoxes)
-    {
+public class Earth{
+    public Earth(int CreatureBoxes) {
+        ChangeBoxes(CreatureBoxes);
+    }
+    public void ChangeBoxes(int CreatureBoxes){
         double chance = Math.random();
         if(chance < 0.5)
         {
