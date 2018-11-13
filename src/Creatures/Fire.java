@@ -4,9 +4,9 @@ import Game.Runner;
 
 public class Fire{
     public Fire(int CreatureBoxes) {
-        ChangeBoxes(CreatureBoxes);
+        fireBoxes(CreatureBoxes);
     }
-    public void ChangeBoxes(int CreatureBoxes){
+    public void fireBoxes(int CreatureBoxes){
         double chance = Math.random();
         if(chance < 0.5)
         {

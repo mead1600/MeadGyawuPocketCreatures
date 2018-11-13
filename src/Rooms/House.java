@@ -7,7 +7,7 @@ public class House extends Board{
     {
         super(x, y);//type);
     }
-    public void enterRoom(Person x, Typing version)
+    public void enterRoom(Person x, Typing version,int CreatureBoxes)
     {
         occupant = x;
         x.setxLoc(this.xLoc);

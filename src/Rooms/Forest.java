@@ -1,8 +1,13 @@
 package Rooms;
 
+import Creatures.Air;
+import Creatures.Fire;
 import Creatures.Typing;
 import Rooms.Person;
 import Game.Runner;
+import Creatures.Air;
+import Creatures.Water;
+import java.util.Scanner;
 
 public class Forest extends Board{
     Typing type;
@@ -10,7 +15,7 @@ public class Forest extends Board{
     {
         super(x, y);//, type);
     }
-    public void enterRoom(Person x, Typing version) {
+    public void enterRoom(Person x, Typing version, int CreatureBoxes) {
         occupant = x;
         x.setxLoc(this.xLoc);
         x.setyLoc(this.yLoc);
@@ -20,6 +25,19 @@ public class Forest extends Board{
             version = new Typing("air");
             //String realVer = toString(version);
             System.out.println("Type: " + version);
+            System.out.println("Whould you like to catch this Windo?(y/n)");
+            Scanner decision = new Scanner(System.in);
+            String Final = decision.nextLine();
+            while(!(Final.toLowerCase().equals("y")) && !(Final.toLowerCase().equals("n")))
+            {
+                System.out.println("Please answer with y or n");
+                decision = new Scanner(System.in);
+                Final = decision.nextLine();
+            }
+            if(Final.toLowerCase().equals("y"))
+            {
+                new Air(CreatureBoxes);
+            }
             //setAir(type);
             //this.type = "air";
         } else {
@@ -27,6 +45,19 @@ public class Forest extends Board{
             version = new Typing("water");
             //String realVer = toString(version);
             System.out.println("Type: " + version);
+            System.out.println("Whould you like to catch this WaterLilly?(y/n)");
+            Scanner decision = new Scanner(System.in);
+            String Final = decision.nextLine();
+            while(!(Final.toLowerCase().equals("y")) && !(Final.toLowerCase().equals("n")))
+            {
+                System.out.println("Please answer with y or n");
+                decision = new Scanner(System.in);
+                Final = decision.nextLine();
+            }
+            if(Final.toLowerCase().equals("y"))
+            {
+                new Water(CreatureBoxes);
+            }
             //setWater(type);
             //this.type = "water";
         }

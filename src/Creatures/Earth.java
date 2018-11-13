@@ -4,9 +4,9 @@ import Game.Runner;
 
 public class Earth{
     public Earth(int CreatureBoxes) {
-        ChangeBoxes(CreatureBoxes);
+        earthBoxes(CreatureBoxes);
     }
-    public void ChangeBoxes(int CreatureBoxes){
+    public void earthBoxes(int CreatureBoxes){
         double chance = Math.random();
         if(chance < 0.5)
         {

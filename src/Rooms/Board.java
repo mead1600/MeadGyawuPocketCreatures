@@ -19,7 +19,7 @@ public class Board {
      * Method controls the results when a person enters this room.
      * @param x the Person entering
      */
-    public void enterRoom(Person x, Typing version)
+    public void enterRoom(Person x, Typing version, int CreatureBoxes)
     {
         System.out.println("You entered an empty field.");
         occupant = x;
