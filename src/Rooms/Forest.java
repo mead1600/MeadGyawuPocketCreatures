@@ -15,7 +15,7 @@ public class Forest extends Board{
     {
         super(x, y);//, type);
     }
-    public void enterRoom(Person x, Typing version, int CreatureBoxes) {
+    public void enterRoom(Person x, Typing version, int CreatureBoxes, double chance) {
         occupant = x;
         x.setxLoc(this.xLoc);
         x.setyLoc(this.yLoc);
@@ -36,7 +36,8 @@ public class Forest extends Board{
             }
             if(Final.toLowerCase().equals("y"))
             {
-                new Air(CreatureBoxes);
+                //double chance = Math.random();
+                new Air(chance);//CreatureBoxes);
             }
             //setAir(type);
             //this.type = "air";
@@ -56,7 +57,9 @@ public class Forest extends Board{
             }
             if(Final.toLowerCase().equals("y"))
             {
-                new Water(CreatureBoxes);
+                //double chance = Math.random();
+                new Water(chance);//CreatureBoxes);
+
             }
             //setWater(type);
             //this.type = "water";

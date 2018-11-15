@@ -11,7 +11,7 @@ public class Road extends Board{
     {
         super(x, y);//, type);
     }
-    public void enterRoom(Person x, Typing version, int CreatureBoxes) {
+    public void enterRoom(Person x, Typing version, int CreatureBoxes, double chance) {
         occupant = x;
         x.setxLoc(this.xLoc);
         x.setyLoc(this.yLoc);
@@ -30,7 +30,8 @@ public class Road extends Board{
             }
             if(Final.toLowerCase().equals("y"))
             {
-                new Fire(CreatureBoxes);
+                //double chance = Math.random();
+                new Fire(chance);//CreatureBoxes);
             }
             //String realVer = toString(version);
             //System.out.println("Type: " + realVer);
@@ -55,11 +56,13 @@ public class Road extends Board{
             }
             if(Final.toLowerCase().equals("y"))
             {
-                new Earth(CreatureBoxes);
+                //double chance = Math.random();
+                new Earth(chance);//CreatureBoxes);
             }
             //this.type = "earth";
         }
     }
+
     /*public String toString(Typing version)
     {
         String type = "";
